@@ -24,12 +24,6 @@ global.pings = []
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended: true}))
 
-//db
-mongoose.connect("mongodb://GD:Tjlovetj12@cluster0-shard-00-00.j2kbj.mongodb.net:27017,cluster0-shard-00-01.j2kbj.mongodb.net:27017,cluster0-shard-00-02.j2kbj.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-13grh5-shard-0&authSource=admin&retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: true}, async e => {
-    if (e) throw e
-    logging.fdev(`Connected to Mongo DB`)
-})
-
 app.use(require(`${__dirname}/routes`))
 
 //services
