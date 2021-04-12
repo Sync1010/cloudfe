@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const  ws = require("websocket")
 const crypto = require("crypto")
 
 const schema = new mongoose.Schema({
@@ -20,4 +20,4 @@ const schema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model("friends", schema)
+module.exports = websocket.model("friends",)
