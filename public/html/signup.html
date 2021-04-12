@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>CLOUD</title>
+        <link rel="icon" type="image/ico" href="../files/favico.ico">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/account.css">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/signup.js"></script>
+
+    </head>    
+    <body>
+        <div class="header">
+            <a class="bold">CLOUD</a>
+            <div class="header-right">
+                <a href="/">Home</a>
+                <a href="/download">Download</a>
+                <a href="/login">Login</a>
+                <a href="/credits">Credits</a>
+            </div>
+        </div>
+        <div class="center">
+            <form id="signupForm">
+                <a class="title">Sign Up</a><br><br>
+                <a>Username</a>
+                <input type="text" id="username" name="username" placeholder="Mj"> 
+                <a>Email</a>
+                <input type="email" id="email" name="email" placeholder="you@gmail.com"> 
+                <a>Password</a>
+                <input type="password" id="password" name="password" placeholder="password">
+                <a>Already have an account?</a>
+                <a href="/login">Click here</a>
+                <a> to login.</a>
+                <br>
+                <div id="errorClass">
+                    <a id="notice" class="title" style="font-size: 25px;"></a>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </body>
+</html>
